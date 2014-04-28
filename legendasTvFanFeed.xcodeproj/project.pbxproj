@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		557D4ADA190DF1AA0039BF7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557D4AD9190DF1AA0039BF7E /* Foundation.framework */; };
+		557D4ADC190DF1AA0039BF7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557D4ADB190DF1AA0039BF7E /* CoreGraphics.framework */; };
+		557D4ADE190DF1AA0039BF7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557D4ADD190DF1AA0039BF7E /* UIKit.framework */; };
+		557D4AE4190DF1AA0039BF7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 557D4AE2190DF1AA0039BF7E /* InfoPlist.strings */; };
+		557D4AE6190DF1AA0039BF7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557D4AE5190DF1AA0039BF7E /* main.m */; };
+		557D4AEA190DF1AA0039BF7E /* AKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 557D4AE9190DF1AA0039BF7E /* AKAppDelegate.m */; };
+		557D4AED190DF1AA0039BF7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557D4AEB190DF1AA0039BF7E /* Main.storyboard */; };
+		557D4AF0190DF1AA0039BF7E /* AKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557D4AEF190DF1AA0039BF7E /* AKFirstViewController.m */; };
+		557D4AF3190DF1AA0039BF7E /* AKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557D4AF2190DF1AA0039BF7E /* AKSecondViewController.m */; };
+		557D4AF5190DF1AA0039BF7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557D4AF4190DF1AA0039BF7E /* Images.xcassets */; };
+		557D4AFC190DF1AA0039BF7E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557D4AFB190DF1AA0039BF7E /* XCTest.framework */; };
+		557D4AFD190DF1AA0039BF7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557D4AD9190DF1AA0039BF7E /* Foundation.framework */; };
+		557D4AFE190DF1AA0039BF7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557D4ADD190DF1AA0039BF7E /* UIKit.framework */; };
+		557D4B06190DF1AA0039BF7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 557D4B04190DF1AA0039BF7E /* InfoPlist.strings */; };
+		557D4B08190DF1AA0039BF7E /* legendasTvFanFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 557D4B07190DF1AA0039BF7E /* legendasTvFanFeedTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		557D4AFF190DF1AA0039BF7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 557D4ACE190DF1AA0039BF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557D4AD5190DF1AA0039BF7E;
+			remoteInfo = legendasTvFanFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		557D4AD6190DF1AA0039BF7E /* legendasTvFanFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legendasTvFanFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		557D4AD9190DF1AA0039BF7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		557D4ADB190DF1AA0039BF7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		557D4ADD190DF1AA0039BF7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		557D4AE1190DF1AA0039BF7E /* legendasTvFanFeed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "legendasTvFanFeed-Info.plist"; sourceTree = "<group>"; };
+		557D4AE3190DF1AA0039BF7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		557D4AE5190DF1AA0039BF7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		557D4AE7190DF1AA0039BF7E /* legendasTvFanFeed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "legendasTvFanFeed-Prefix.pch"; sourceTree = "<group>"; };
+		557D4AE8190DF1AA0039BF7E /* AKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAppDelegate.h; sourceTree = "<group>"; };
+		557D4AE9190DF1AA0039BF7E /* AKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKAppDelegate.m; sourceTree = "<group>"; };
+		557D4AEC190DF1AA0039BF7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		557D4AEE190DF1AA0039BF7E /* AKFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKFirstViewController.h; sourceTree = "<group>"; };
+		557D4AEF190DF1AA0039BF7E /* AKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKFirstViewController.m; sourceTree = "<group>"; };
+		557D4AF1190DF1AA0039BF7E /* AKSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKSecondViewController.h; sourceTree = "<group>"; };
+		557D4AF2190DF1AA0039BF7E /* AKSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKSecondViewController.m; sourceTree = "<group>"; };
+		557D4AF4190DF1AA0039BF7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		557D4AFA190DF1AA0039BF7E /* legendasTvFanFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = legendasTvFanFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		557D4AFB190DF1AA0039BF7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		557D4B03190DF1AA0039BF7E /* legendasTvFanFeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "legendasTvFanFeedTests-Info.plist"; sourceTree = "<group>"; };
+		557D4B05190DF1AA0039BF7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		557D4B07190DF1AA0039BF7E /* legendasTvFanFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = legendasTvFanFeedTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		557D4AD3190DF1AA0039BF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557D4ADC190DF1AA0039BF7E /* CoreGraphics.framework in Frameworks */,
+				557D4ADE190DF1AA0039BF7E /* UIKit.framework in Frameworks */,
+				557D4ADA190DF1AA0039BF7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557D4AF7190DF1AA0039BF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557D4AFC190DF1AA0039BF7E /* XCTest.framework in Frameworks */,
+				557D4AFE190DF1AA0039BF7E /* UIKit.framework in Frameworks */,
+				557D4AFD190DF1AA0039BF7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		557D4ACD190DF1AA0039BF7E = {
+			isa = PBXGroup;
+			children = (
+				557D4ADF190DF1AA0039BF7E /* legendasTvFanFeed */,
+				557D4B01190DF1AA0039BF7E /* legendasTvFanFeedTests */,
+				557D4AD8190DF1AA0039BF7E /* Frameworks */,
+				557D4AD7190DF1AA0039BF7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		557D4AD7190DF1AA0039BF7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				557D4AD6190DF1AA0039BF7E /* legendasTvFanFeed.app */,
+				557D4AFA190DF1AA0039BF7E /* legendasTvFanFeedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		557D4AD8190DF1AA0039BF7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				557D4AD9190DF1AA0039BF7E /* Foundation.framework */,
+				557D4ADB190DF1AA0039BF7E /* CoreGraphics.framework */,
+				557D4ADD190DF1AA0039BF7E /* UIKit.framework */,
+				557D4AFB190DF1AA0039BF7E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		557D4ADF190DF1AA0039BF7E /* legendasTvFanFeed */ = {
+			isa = PBXGroup;
+			children = (
+				557D4AE8190DF1AA0039BF7E /* AKAppDelegate.h */,
+				557D4AE9190DF1AA0039BF7E /* AKAppDelegate.m */,
+				557D4AEB190DF1AA0039BF7E /* Main.storyboard */,
+				557D4AEE190DF1AA0039BF7E /* AKFirstViewController.h */,
+				557D4AEF190DF1AA0039BF7E /* AKFirstViewController.m */,
+				557D4AF1190DF1AA0039BF7E /* AKSecondViewController.h */,
+				557D4AF2190DF1AA0039BF7E /* AKSecondViewController.m */,
+				557D4AF4190DF1AA0039BF7E /* Images.xcassets */,
+				557D4AE0190DF1AA0039BF7E /* Supporting Files */,
+			);
+			path = legendasTvFanFeed;
+			sourceTree = "<group>";
+		};
+		557D4AE0190DF1AA0039BF7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				557D4AE1190DF1AA0039BF7E /* legendasTvFanFeed-Info.plist */,
+				557D4AE2190DF1AA0039BF7E /* InfoPlist.strings */,
+				557D4AE5190DF1AA0039BF7E /* main.m */,
+				557D4AE7190DF1AA0039BF7E /* legendasTvFanFeed-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		557D4B01190DF1AA0039BF7E /* legendasTvFanFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				557D4B07190DF1AA0039BF7E /* legendasTvFanFeedTests.m */,
+				557D4B02190DF1AA0039BF7E /* Supporting Files */,
+			);
+			path = legendasTvFanFeedTests;
+			sourceTree = "<group>";
+		};
+		557D4B02190DF1AA0039BF7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				557D4B03190DF1AA0039BF7E /* legendasTvFanFeedTests-Info.plist */,
+				557D4B04190DF1AA0039BF7E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		557D4AD5190DF1AA0039BF7E /* legendasTvFanFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557D4B0B190DF1AA0039BF7E /* Build configuration list for PBXNativeTarget "legendasTvFanFeed" */;
+			buildPhases = (
+				557D4AD2190DF1AA0039BF7E /* Sources */,
+				557D4AD3190DF1AA0039BF7E /* Frameworks */,
+				557D4AD4190DF1AA0039BF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = legendasTvFanFeed;
+			productName = legendasTvFanFeed;
+			productReference = 557D4AD6190DF1AA0039BF7E /* legendasTvFanFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		557D4AF9190DF1AA0039BF7E /* legendasTvFanFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557D4B0E190DF1AA0039BF7E /* Build configuration list for PBXNativeTarget "legendasTvFanFeedTests" */;
+			buildPhases = (
+				557D4AF6190DF1AA0039BF7E /* Sources */,
+				557D4AF7190DF1AA0039BF7E /* Frameworks */,
+				557D4AF8190DF1AA0039BF7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				557D4B00190DF1AA0039BF7E /* PBXTargetDependency */,
+			);
+			name = legendasTvFanFeedTests;
+			productName = legendasTvFanFeedTests;
+			productReference = 557D4AFA190DF1AA0039BF7E /* legendasTvFanFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		557D4ACE190DF1AA0039BF7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Akio;
+				TargetAttributes = {
+					557D4AF9190DF1AA0039BF7E = {
+						TestTargetID = 557D4AD5190DF1AA0039BF7E;
+					};
+				};
+			};
+			buildConfigurationList = 557D4AD1190DF1AA0039BF7E /* Build configuration list for PBXProject "legendasTvFanFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 557D4ACD190DF1AA0039BF7E;
+			productRefGroup = 557D4AD7190DF1AA0039BF7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557D4AD5190DF1AA0039BF7E /* legendasTvFanFeed */,
+				557D4AF9190DF1AA0039BF7E /* legendasTvFanFeedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		557D4AD4190DF1AA0039BF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557D4AF5190DF1AA0039BF7E /* Images.xcassets in Resources */,
+				557D4AE4190DF1AA0039BF7E /* InfoPlist.strings in Resources */,
+				557D4AED190DF1AA0039BF7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557D4AF8190DF1AA0039BF7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557D4B06190DF1AA0039BF7E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		557D4AD2190DF1AA0039BF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557D4AEA190DF1AA0039BF7E /* AKAppDelegate.m in Sources */,
+				557D4AF0190DF1AA0039BF7E /* AKFirstViewController.m in Sources */,
+				557D4AF3190DF1AA0039BF7E /* AKSecondViewController.m in Sources */,
+				557D4AE6190DF1AA0039BF7E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557D4AF6190DF1AA0039BF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557D4B08190DF1AA0039BF7E /* legendasTvFanFeedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		557D4B00190DF1AA0039BF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557D4AD5190DF1AA0039BF7E /* legendasTvFanFeed */;
+			targetProxy = 557D4AFF190DF1AA0039BF7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		557D4AE2190DF1AA0039BF7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557D4AE3190DF1AA0039BF7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		557D4AEB190DF1AA0039BF7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557D4AEC190DF1AA0039BF7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		557D4B04190DF1AA0039BF7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557D4B05190DF1AA0039BF7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		557D4B09190DF1AA0039BF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		557D4B0A190DF1AA0039BF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		557D4B0C190DF1AA0039BF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "legendasTvFanFeed/legendasTvFanFeed-Prefix.pch";
+				INFOPLIST_FILE = "legendasTvFanFeed/legendasTvFanFeed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		557D4B0D190DF1AA0039BF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "legendasTvFanFeed/legendasTvFanFeed-Prefix.pch";
+				INFOPLIST_FILE = "legendasTvFanFeed/legendasTvFanFeed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		557D4B0F190DF1AA0039BF7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/legendasTvFanFeed.app/legendasTvFanFeed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "legendasTvFanFeed/legendasTvFanFeed-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "legendasTvFanFeedTests/legendasTvFanFeedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		557D4B10190DF1AA0039BF7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/legendasTvFanFeed.app/legendasTvFanFeed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "legendasTvFanFeed/legendasTvFanFeed-Prefix.pch";
+				INFOPLIST_FILE = "legendasTvFanFeedTests/legendasTvFanFeedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		557D4AD1190DF1AA0039BF7E /* Build configuration list for PBXProject "legendasTvFanFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557D4B09190DF1AA0039BF7E /* Debug */,
+				557D4B0A190DF1AA0039BF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557D4B0B190DF1AA0039BF7E /* Build configuration list for PBXNativeTarget "legendasTvFanFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557D4B0C190DF1AA0039BF7E /* Debug */,
+				557D4B0D190DF1AA0039BF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		557D4B0E190DF1AA0039BF7E /* Build configuration list for PBXNativeTarget "legendasTvFanFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557D4B0F190DF1AA0039BF7E /* Debug */,
+				557D4B10190DF1AA0039BF7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 557D4ACE190DF1AA0039BF7E /* Project object */;
+}
