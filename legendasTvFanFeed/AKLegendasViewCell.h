@@ -1,5 +1,5 @@
 //
-//  AKFirstViewController.h
+//  AKLegendasViewCell.h
 //  legendasTvFanFeed
 //
 //  Created by Guilherme Akio Sakae on 2014-04-27.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AKFirstViewController : UIViewController
+@interface AKLegendasViewCell : UICollectionViewCell
 
 @end
