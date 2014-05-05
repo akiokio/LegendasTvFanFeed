@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TFHpple.h"
 
 @interface AKLegenda : NSObject
 
@@ -15,6 +16,7 @@
 @property(nonatomic) NSString *temporada;
 @property(nonatomic) NSString *episodio;
 @property(nonatomic) NSString *dataPublicacao;
+@property(nonatomic) NSString *HoraPublicacao;
 
 @property(nonatomic) NSString *url;
 
@@ -28,9 +30,12 @@
 
 @property(nonatomic) NSString *grupoLegenda;
 @property(nonatomic) NSString *grupoLegendaUrl;
+@property(nonatomic) NSString *grupoImagemUrl;
+@property(nonatomic) UIImage *grupoImagem;
 
 + (void)imageForPhoto:(NSString *)urlString completion:(void(^)(UIImage *image))completion;
 + (void)downloadURL:(NSURL *)url key:(NSString *)key completion:(void(^)(UIImage *image))completion;
++ (AKLegenda *) initWithGalleryHtml:(TFHppleElement *)galleryHtml;
 
 - (UIImage *) resizeImage:(UIImage *)image toWith:(float)width andHeight:(float)height;
 @end

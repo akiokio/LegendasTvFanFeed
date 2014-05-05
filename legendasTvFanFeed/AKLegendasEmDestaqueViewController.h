@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AKLegenda.h"
 
 @interface AKLegendasEmDestaqueViewController : UICollectionViewController
-
+@property(nonatomic) AKLegenda *legendaSelecionada;
 
 @end

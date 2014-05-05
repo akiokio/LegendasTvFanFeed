@@ -7,7 +7,7 @@
 //
 
 #import "AKLegendasEmDestaqueViewController.h"
-#import "AKLegenda.h"
+#import "AKInternaLegendaViewController.h"
 
 #import "TFHpple.h"
 
@@ -43,33 +43,7 @@
         
         //Itera pelas series
         for (TFHppleElement *serie in destaques) {
-            //Pega os elementos, cria a classe legenda e adiciona no array
-            AKLegenda *legenda = [[AKLegenda alloc] init];
-            
-            //Titulo, url, release, formato e Temporada/episodio
-            TFHppleElement *a = [[serie childrenWithTagName:@"h3"] objectAtIndex:0];
-            legenda.titulo = [[[a children] objectAtIndex:0] text];
-            legenda.url = [[[a children] objectAtIndex:0] objectForKey:@"href"];
-            
-            //Formanto, temporada, episodio e data da publicacao
-            legenda.formato = [[[[[a children] objectAtIndex:0] childrenWithTagName:@"span"] objectAtIndex:0] text];
-            legenda.temporada = [[[[[[a children] objectAtIndex:0] childrenWithTagName:@"span"] objectAtIndex:1] text] substringWithRange:NSMakeRange(0, 3)];
-            legenda.episodio = [[[[[[a children] objectAtIndex:0] childrenWithTagName:@"span"] objectAtIndex:1] text] substringWithRange:NSMakeRange(3, 3)];
-            legenda.dataPublicacao = [[[serie childrenWithTagName:@"p"] objectAtIndex:2] text];
-            
-            //Quantidade de downloads
-            legenda.quantidadeDownloads = [[[[[serie childrenWithTagName:@"p"] objectAtIndex:0] childrenWithTagName:@"span"] objectAtIndex:0] text];
-            
-            //Grupo que legendou
-            legenda.grupoLegenda = [[[[[[[serie childrenWithTagName:@"p"] objectAtIndex:1] childrenWithTagName:@"span"] objectAtIndex:0] childrenWithTagName:@"a"] objectAtIndex:0] text];
-            legenda.grupoLegendaUrl = [[[[[[[serie childrenWithTagName:@"p"] objectAtIndex:1] childrenWithTagName:@"span"] objectAtIndex:0] childrenWithTagName:@"a"] objectAtIndex:0] objectForKey:@"href"];
-            NSLog(@"%@-%@", legenda.dataPublicacao, legenda.url);
-            
-            //Poster
-            legenda.posterUrl = [[[serie childrenWithTagName:@"img"] objectAtIndex:0] objectForKey:@"src"];
-            legenda.posterWidth = [[[serie childrenWithTagName:@"img"] objectAtIndex:0] objectForKey:@"width"];
-            legenda.posterHeight = [[[serie childrenWithTagName:@"img"] objectAtIndex:0] objectForKey:@"height"];
-            legenda.posterAlt = [[[serie childrenWithTagName:@"img"] objectAtIndex:0] objectForKey:@"alt"];
+            AKLegenda *legenda = [AKLegenda initWithGalleryHtml:serie];
             
 //            NSLog(@"%@, %@", legenda.titulo, legenda.posterUrl);
             [self.legendas addObject:legenda];
@@ -119,6 +93,15 @@
     [cell addSubview:imgView];
     
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+    if ([[segue identifier] isEqualToString:@"showLegendaDetalhes"]) {
+        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] lastObject];
+        AKInternaLegendaViewController *internaViewController = (AKInternaLegendaViewController *)[segue destinationViewController];
+        internaViewController.legenda = [self.legendas objectAtIndex:indexPath.row];
+    }
 }
 
 @end
