@@ -30,6 +30,10 @@
     [AKLegenda downloadURL:imageURL key:self.legenda.grupoImagemUrl completion:^(UIImage *image) {
          self.equipeLegenderImg.image = image;
     }];
+    
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+
 }
 
 - (void)viewDidLoad
@@ -42,5 +46,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 @end

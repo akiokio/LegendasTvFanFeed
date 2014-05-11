@@ -42,7 +42,7 @@
                             <constraint firstAttribute="centerY" secondItem="DcM-Fx-MKR" secondAttribute="centerY" id="lHZ-e8-ii2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Series" image="second" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Series" image="World_Times" id="Z7h-1E-pvt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,9 +72,10 @@
         <scene sceneID="zPi-2D-15v">
             <objects>
                 <navigationController definesPresentationContext="YES" id="YuE-DP-24m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Destaques" id="lUg-Rs-AMb"/>
+                    <tabBarItem key="tabBarItem" title="Destaques" image="Favorites" id="lUg-Rs-AMb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EGZ-0A-R3a">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="pGv-1R-Hfm" kind="relationship" relationship="rootViewController" id="DMv-VO-hND"/>
@@ -125,7 +126,7 @@
             </objects>
             <point key="canvasLocation" x="1147" y="-122"/>
         </scene>
-        <!--Interna Legenda View Controller-->
+        <!--Interna Legenda View Controller - Titulo-->
         <scene sceneID="YLg-Lz-ffp">
             <objects>
                 <viewController id="LtI-jo-raK" customClass="AKInternaLegendaViewController" sceneMemberID="viewController">
@@ -137,21 +138,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZE-Jb-daz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ZE-Jb-daz">
                                 <rect key="frame" x="0.0" y="64" width="140" height="207"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="IBY-V7-OMi"/>
+                                    <constraint firstAttribute="width" constant="140" id="pgk-K7-72d"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="To4-ok-qdE">
-                                <rect key="frame" x="40" y="296" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="To4-ok-qdE">
+                                <rect key="frame" x="20" y="296" width="280" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="det-by-gy0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="det-by-gy0">
                                 <rect key="frame" x="0.0" y="271" width="140" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="mt0-xT-IiM"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo da serie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWs-pn-7y2">
                                 <rect key="frame" x="148" y="74" width="152" height="21"/>
@@ -192,8 +200,23 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="det-by-gy0" firstAttribute="trailing" secondItem="5ZE-Jb-daz" secondAttribute="trailing" id="8ic-d3-RfD"/>
+                            <constraint firstItem="To4-ok-qdE" firstAttribute="top" secondItem="det-by-gy0" secondAttribute="bottom" constant="8" id="AfR-QP-cDE"/>
+                            <constraint firstItem="5ZE-Jb-daz" firstAttribute="top" secondItem="27G-7O-g4D" secondAttribute="bottom" id="I8B-iH-GoL"/>
+                            <constraint firstItem="det-by-gy0" firstAttribute="leading" secondItem="5ZE-Jb-daz" secondAttribute="leading" id="MBG-ba-6Qc"/>
+                            <constraint firstItem="det-by-gy0" firstAttribute="top" secondItem="5ZE-Jb-daz" secondAttribute="bottom" id="Soa-wl-3If"/>
+                            <constraint firstItem="To4-ok-qdE" firstAttribute="leading" secondItem="H77-C6-Pyc" secondAttribute="leading" constant="20" id="bH9-XM-3v5"/>
+                            <constraint firstItem="VA7-y6-XBa" firstAttribute="top" secondItem="To4-ok-qdE" secondAttribute="bottom" constant="7" id="gU6-Qe-Hya"/>
+                            <constraint firstAttribute="trailing" secondItem="To4-ok-qdE" secondAttribute="trailing" constant="20" id="lRA-ZJ-BbT"/>
+                            <constraint firstItem="5ZE-Jb-daz" firstAttribute="leading" secondItem="H77-C6-Pyc" secondAttribute="leading" id="ohK-dX-8PL"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OCM-as-rtf"/>
+                    <navigationItem key="navigationItem" title="Titulo" id="OCM-as-rtf">
+                        <barButtonItem key="rightBarButtonItem" title="Ver no site" id="Wim-oa-cg1">
+                            <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dataPostada" destination="nUI-dH-NRA" id="ckk-DV-Oy0"/>
                         <outlet property="episodioTemporada" destination="l7D-53-UpO" id="5tP-nr-DkW"/>
@@ -212,7 +235,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="Favorites" width="27" height="26"/>
+        <image name="World_Times" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
