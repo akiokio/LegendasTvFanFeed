@@ -7,7 +7,7 @@
 //
 
 #import "AKLegenda.h"
-#import <SAMCache/SAMCache.h>
+#import <SAMCache.h>
 
 #define baseURL @"http://legendas.tv"
 
